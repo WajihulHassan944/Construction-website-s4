@@ -32,7 +32,8 @@
 </head>
 
 <body>
-    <!-- Topbar Start -->
+   
+   <!-- Topbar Start -->
     <div class="container-fluid px-5 d-none d-lg-block">
         <div class="row gx-5">
             <div class="col-lg-4 text-center py-3">
@@ -40,7 +41,7 @@
                     <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
                     <div class="text-start">
                         <h6 class="text-uppercase fw-bold">Our Office</h6>
-                        <span>Location, City, Country</span>
+                        <span>470 Citi Centre St#1228,<br> Winter Haven, FL 33880</span>
                     </div>
                 </div>
             </div>
@@ -49,7 +50,7 @@
                     <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
                     <div class="text-start">
                         <h6 class="text-uppercase fw-bold">Email Us</h6>
-                        <span>info@example.com</span>
+                        <span>angelica@allcountyfl.com <br> marcus@allcountyfl.com</span>
                     </div>
                 </div>
             </div>
@@ -58,7 +59,7 @@
                     <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
                     <div class="text-start">
                         <h6 class="text-uppercase fw-bold">Call Us</h6>
-                        <span>+012 345 6789</span>
+                        <span>+(407) 686 3865 <br> +(863) 272 7841</span>
                     </div>
                 </div>
             </div>
@@ -66,13 +67,28 @@
     </div>
     <!-- Topbar End -->
 
+<style>
+	#logoimg{
+	width:210px;
+	position:absolute;
+	top:-57px;	
+	}	
+	@media only screen and (max-width: 600px) {
+   #logoimg{
+	width:150px;
+	position:absolute;
+	top:-42px;
+	left:-30px;
+	}
+}
+	</style>
 
     <!-- Navbar Start -->
     <div class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0">
         <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand">
-                <h1 class="m-0 display-4 text-uppercase text-white"><i class="bi bi-building text-primary me-2"></i>WEBUILD</h1>
-            </a>
+            <a href="index.html" class="navbar-brand" style="position:relative;">
+              <img src="images/logo2.png" id="logoimg">
+			</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -84,15 +100,11 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu m-0">
-                            <a href="project.html" class="dropdown-item">Our Project</a>
                             <a href="team.html" class="dropdown-item active">The Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    <a href="" class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Get A Quote <i class="bi bi-arrow-right"></i></a>
+                    <a style="cursor:pointer;" class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block" id="contactUsLink">Get A Quote <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
         </nav>
@@ -104,7 +116,7 @@
     <div class="container-fluid page-header">
         <h1 class="display-3 text-uppercase text-white mb-3">The Team</h1>
         <div class="d-inline-flex text-white">
-            <h6 class="text-uppercase m-0"><a href="">Home</a></h6>
+            <h6 class="text-uppercase m-0"><a href="index.html">Home</a></h6>
             <h6 class="text-white m-0 px-3">/</h6>
             <h6 class="text-uppercase text-white m-0">The Team</h6>
         </div>
@@ -113,219 +125,67 @@
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 text-uppercase mb-4">We Are <span class="text-primary">Professional & Expert</span> Workers</h1>
-        </div>
-        <div class="row g-5">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-1.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Adam Phillips</h4>
-                            <span>CEO & Founder</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-2.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Dylan Adams</h4>
-                            <span>Civil Engineer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-3.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Jhon Doe</h4>
-                            <span>Interior Designer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-4.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Josh Dunn</h4>
-                            <span>Painter</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-1.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Adam Phillips</h4>
-                            <span>CEO & Founder</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-2.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Dylan Adams</h4>
-                            <span>Civil Engineer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-3.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Jhon Doe</h4>
-                            <span>Interior Designer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6">
-                <div class="row g-0">
-                    <div class="col-10" style="min-height: 300px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100" src="img/team-4.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="h-100 d-flex flex-column align-items-center justify-content-between bg-light">
-                            <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="bg-light p-4">
-                            <h4 class="text-uppercase">Josh Dunn</h4>
-                            <span>Painter</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+   <div class="container-fluid py-6 px-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <h1 class="display-5 text-uppercase mb-4">We Are <span class="text-primary">Professional & Expert</span> Workers</h1>
     </div>
+    <div class="row g-5 justify-content-center">
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="row g-0">
+                <div class="col-2">
+                    <div class="w-300 d-flex align-items-center justify-content-between bg-light">
+                        <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="bg-light p-4">
+                        <h4 class="text-uppercase">Marcus EI</h4>
+                        <span>CEO & Founder</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="row g-0">
+                <div class="col-2">
+                    <div class="w-300 d-flex align-items-center justify-content-between bg-light">
+                        <a class="btn" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="bg-light p-4">
+                        <h4 class="text-uppercase">Angelica Perrin</h4>
+                        <span>CFO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
     <!-- Team End -->
-    
 
     <!-- Footer Start -->
     <div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5">
         <div class="row g-5">
             <div class="col-lg-6 pe-lg-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 display-4 text-uppercase text-white"><i class="bi bi-building text-primary me-2"></i>WEBUILD</h1>
+                <a href="index.html" class="navbar-brand" style="position:relative;">
+                    <h1 class="m-0 display-4 text-uppercase text-white">   <img src="images/logo2.png" style="width:210px; top:-1px;">All County</h1>
                 </a>
-                <p>Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea ipsum diam  sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.</p>
-                <p><i class="fa fa-map-marker-alt me-2"></i>Location, City, Country</p>
-                <p><i class="fa fa-phone-alt me-2"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope me-2"></i>info@example.com</p>
+                <p>To be the foremost supplier of remodeling services by consistently providing high-quality, cost-effective craftsmanship to each client while maintaining the greatest level of customer service and professionalism. We want to build long-term relationships by being transparent, responsive, and exceeding expectations.</p>
+                <p><i class="fa fa-map-marker-alt me-2"></i>470 Citi Centre St#1228, Winter Haven, FL 33880</p>
+                <p><i class="fa fa-phone-alt me-2"></i>+(407) 686 3865 , +(863) 272 7841</p>
+                <p><i class="fa fa-envelope me-2"></i>angelica@allcountyfl.com , marcus@allcountyfl.com</p>
                 <div class="d-flex justify-content-start mt-4">
                     <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -334,50 +194,47 @@
                 </div>
             </div>
             <div class="col-lg-6 ps-lg-5">
-                <div class="row g-5">
-                    <div class="col-sm-6">
+                <div class="row ">
+                    <div class="col-sm-12">
                         <h4 class="text-white text-uppercase mb-4">Quick Links</h4>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                            <a class="text-white-50" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
+                            <a class="text-white-50 mb-2" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a>
+                            <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a>
+                            <a class="text-white-50 mb-2" href="service.html"><i class="fa fa-angle-right me-2"></i>Our Services</a>
+                            <a class="text-white-50 mb-2" href="team.html"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
+                           <a class="text-white-50" href="contact.html" id="contactUsLink"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <h4 class="text-white text-uppercase mb-4">Popular Links</h4>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
-                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                            <a class="text-white-50" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <h4 class="text-white text-uppercase mb-4">Newsletter</h4>
-                        <div class="w-100">
-                            <div class="input-group">
-                                <input type="text" class="form-control border-light" style="padding: 20px 30px;" placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign Up</button>
-                            </div>
-                        </div>
-                    </div>
+                    
+                   
                 </div>
             </div>
         </div>
     </div>
-   <div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
+    <div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
         <div class="d-flex flex-column flex-md-row justify-content-between">
             <div class="py-4 px-5 text-center text-md-start">
-                <p class="mb-0">&copy; <a class="text-primary" href="#">Your Site Name</a>. All Rights Reserved.</p>
+                <p class="mb-0">&copy; <a class="text-primary" href="#">All County Construction</a>. All Rights Reserved.</p>
             </div>
             <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
                 <p class="mb-0">Designed by <a class="text-dark" href="#">Wajih ul Hassan</a></p>
             </div>
         </div>
     </div>
-     <!-- Footer End -->
+    <!-- Footer End -->
+
+<script>
+  function openGmailWithRecipient() {
+  
+    var recipient = "angelica@allcountyfl.com";
+
+    var mailtoUrl = "mailto:" + recipient;
+
+    window.location.href = mailtoUrl;
+  }
+
+  document.getElementById("contactUsLink").addEventListener("click", openGmailWithRecipient);
+</script>
 
 
     <!-- Back to Top -->
