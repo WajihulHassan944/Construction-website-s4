@@ -194,7 +194,7 @@
 	width:160px;
 	position:absolute;
 	top:-57px;
-	left:100px;
+	left:80px;
 	}	
 	@media only screen and (max-width: 600px) {
    .imagesContainer img{

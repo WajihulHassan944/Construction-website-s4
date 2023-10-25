@@ -74,7 +74,7 @@
     <div class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0">
         <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
             <a href="index.html" class="navbar-brand" style="position:relative;">
-              <img src="images/logo2.png" id="logoimg">
+           <img src="mainlogotransparent.png" id="logoimg">
 			</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -127,7 +127,167 @@
 	</style>
 
 
-    <!-- Contact Start -->
+
+
+
+
+  <!-- Contact Start -->
+    <div class="container-fluid py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">Please <span class="text-primary">Feel Free</span> To Contact Us</h1>
+        </div>
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0" style="height: 600px;">
+              <iframe class="w-100 h-100"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.1169681242016!2d-81.72805268544906!3d28.00356808361249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7146f3d45fd3%3A0x7d2a4ee2399a86f8!2s470%20Citi%20Centre%20St%20%231228%2C%20Winter%20Haven%2C%20FL%2033880%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+					frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+			  </iframe>
+
+
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-form bg-light p-5">
+                    
+					
+				<form id="contactme">	<div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control border-0" placeholder="Your Name" id="nameofuser" style="height: 55px;">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;" id="emailofuser">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control border-0" placeholder="Subject" style="height: 55px;" id="subjectofuser">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control border-0" rows="4" placeholder="Message" id="messageofuser"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                        </div>
+                    </div>
+					</form>
+					
+					
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+	
+
+<style>
+
+.loading-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #ffffff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}</style>
+
+
+
+<!-- Add this div for the loading animation -->
+<div id="loadingAnimation" class="loading-container">
+  <div class="loading-spinner"></div>
+</div>
+	
+<script>
+
+var nameofuser = document.getElementById("nameofuser");
+var emailofuser = document.getElementById("emailofuser");
+var subjectofuser = document.getElementById("subjectofuser");
+var messageofuser = document.getElementById("messageofuser");
+
+
+
+var contactme = document.getElementById("contactme");
+
+var loadingAnimation = document.getElementById("loadingAnimation");
+const body = document.querySelector("body");
+ 
+ 
+contactme.addEventListener("submit", function(event) {
+  event.preventDefault(); 
+  
+  if (nameofuser === "" || emailofuser === "" || subjectofuser === "" || messageofuser === "") {
+    alert("Please fill in all fields.");
+    return;
+  }
+loadingAnimation.style.display = "block";
+
+  var formData = {
+    name: userName.value,
+	email: userAddress.value,
+	subject: userEmail.value,
+	message: userPhone.value,
+  };
+
+  fetch("https://bewildered-tan-tux.cyclic.cloud/send-data", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+  })
+  .then(function(response) {
+    if (response.ok) {
+      alert("Data submitted successfully.");
+	  loadingAnimation.style.display = "none";
+	  location.reload();
+	  
+    } else {
+      console.log("Error submitting data.");
+	  loadingAnimation.style.display = "none";
+    }
+  })
+  .catch(function(error) {
+    console.log("Error submitting data.");
+	loadingAnimation.style.display = "none";
+    console.error(error);
+  });
+});
+
+</script>
+
+
+
+
+
+
+    <!-- Contact Start 
     <div class="container-fluid py-6 px-5">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4">Please <span class="text-primary">Feel Free</span> To Contact Us</h1>
@@ -139,7 +299,7 @@
                 
         </div>
     </div>
-    <!-- Contact End -->
+     Contact End -->
 
 
     <!-- Footer Start -->
@@ -147,7 +307,7 @@
         <div class="row g-5">
             <div class="col-lg-6 pe-lg-5">
                 <a href="index.html" class="navbar-brand" style="position:relative;">
-                    <h1 class="m-0 display-4 text-uppercase text-white">   <img src="images/logo2.png" style="width:210px; top:-1px;">All County</h1>
+                    <h1 class="m-0 display-4 text-uppercase text-white">   <img src="mainlogotransparent.png" style="width:210px; top:-1px;">All County</h1>
                 </a>
                 <p>To be the foremost supplier of remodeling services by consistently providing high-quality, cost-effective craftsmanship to each client while maintaining the greatest level of customer service and professionalism. We want to build long-term relationships by being transparent, responsive, and exceeding expectations.</p>
                 <p><i class="fa fa-map-marker-alt me-2"></i>470 Citi Centre St#1228, Winter Haven, FL 33880</p>
